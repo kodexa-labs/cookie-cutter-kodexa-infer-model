@@ -1,0 +1,18 @@
+slug: {{cookiecutter.project_slug}}
+orgSlug: kodexa
+version: 1.0.0
+type: store
+storeType: MODEL
+lifecycle: production
+publicAccess: true
+name: {{cookiecutter.project_name}}
+description: {{cookiecutter.project_short_description}}
+metadata:
+  trainable: false
+  type: model
+  provider: {{ cookiecutter.github_username }}
+  providerUrl: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+  modelRuntimeRef: kodexa/base-model-runtime
+  modelRuntimeParameters:
+    module: {{ cookiecutter.project_slug }}
+    function: infer

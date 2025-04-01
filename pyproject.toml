@@ -1,0 +1,52 @@
+[tool]
+[tool.poetry]
+name = "cookiecutter-kodexa-transformer-model"
+version = "1.1.1"
+description = "Cookiecutter template for a Kodexa Transformer Model"
+license = "BSD-3-Clause"
+authors = ["Xie Wei <ampedee@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/waynerv/cookiecutter-pypackage"
+documentation = "https://waynerv.github.io/cookiecutter-pypackage/"
+keywords = ['cookiecutter', 'template', 'package']
+
+include = [
+  '{{cookiecutter.project_slug}}/**/*',
+  'cookiecutter.json',
+  'hooks/*'
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+cookiecutter = "2.6.0"
+
+pytest = {version = "^8.3.2", optional=true}
+pyyaml = {version="^6.0.2",optional=true}
+
+[tool.poetry.extras]
+dev = [
+  "pytest",
+  "pyyaml",
+]
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
