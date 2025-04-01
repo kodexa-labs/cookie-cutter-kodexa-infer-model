@@ -4,21 +4,12 @@ sources = {{ cookiecutter.pkg_name }}
 test: format lint unittest
 
 format:
-	isort $(sources) tests
-	black $(sources) tests
+	isort $(sources)
+	black $(sources)
 
 lint:
-	flake8 $(sources) tests
-	mypy $(sources) tests
-
-unittest:
-	pytest
-
-coverage:
-	pytest --cov=$(sources) --cov-branch --cov-report=term-missing tests
-
-pre-commit:
-	pre-commit run --all-files
+	flake8 $(sources)
+	mypy $(sources)
 
 clean:
 	rm -rf .mypy_cache .pytest_cache

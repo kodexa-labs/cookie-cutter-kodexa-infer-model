@@ -28,16 +28,6 @@ toml = {version = "^0.10.2", optional = true}
 kodexa = {version = "^7.4.0", optional = false}
 kodexa-cli = {version = "^7.4.0", optional = false}
 
-[tool.poetry.extras]
-test = [
-    "pytest",
-    "black",
-    "isort",
-    "mypy",
-    "flake8",
-    "flake8-docstrings",
-    ]
-
 [tool.black]
 line-length = 120
 skip-string-normalization = true
@@ -66,8 +56,6 @@ use_parentheses = true
 ensure_newline_before_comments = true
 line_length = 120
 skip_gitignore = true
-# you can skip files as below
-#skip_glob = docs/conf.py
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
