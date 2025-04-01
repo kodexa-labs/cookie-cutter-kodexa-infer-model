@@ -16,3 +16,9 @@ clean:
 	rm -rf *.egg-info
 	rm -rf .tox dist site
 	rm -rf coverage.xml .coverage
+
+deploy:
+    poetry run kodexa deploy model.yml --update
+
+undeploy:
+	poetry run kodexa undeploy model.yml

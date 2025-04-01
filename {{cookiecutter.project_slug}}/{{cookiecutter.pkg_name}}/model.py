@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def infer(document: Document, project: ProjectEndpoint, client: KodexaClient, pipeline_context: PipelineContext, assistant: Assistant):
+def infer(document: Document, project: ProjectEndpoint, pipeline_context: PipelineContext, assistant: Assistant):
 
     logger.info(f"Infer called with document: {document.uuid}")
 
@@ -34,6 +34,7 @@ def infer(document: Document, project: ProjectEndpoint, client: KodexaClient, pi
         logger.info(f"Source Bytes: {len(source_bytes)}")
 
     # We also have a client configured
+    client = KodexaClient()
     logger.info(f"Client: {client.get_platform()}")
 
     # We can also get the assistant
