@@ -8,7 +8,7 @@ name: {{cookiecutter.project_name}}
 description: {{cookiecutter.project_short_description}}
 metadata:
   trainable: false
-  inferrable: true
+  inferable: true
   type: model
   provider: {{ cookiecutter.github_username }}
   providerUrl: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}

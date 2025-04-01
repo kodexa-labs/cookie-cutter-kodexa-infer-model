@@ -4,4 +4,4 @@ __author__ = """{{ cookiecutter.full_name }}"""
 __email__ = '{{ cookiecutter.email }}'
 __version__ = '{{ cookiecutter.version }}'
 
-from {{ cookiecutter.pkg_name }} import infer
+from {{ cookiecutter.pkg_name }}.model import infer
