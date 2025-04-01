@@ -25,5 +25,5 @@ pip install -U cookiecutter
 Generate a Python package project:
 
 ```
-cookiecutter https://github.com/kodexa-labs/cookie-cutter-kodexa-infer-model
+cookiecutter https://github.com/kodexa-labs/cookie-cutter-kodexa-infer-model.git
 ```
