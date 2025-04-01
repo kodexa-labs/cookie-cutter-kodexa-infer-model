@@ -7,6 +7,5 @@
   "email": "support@kodexa.com",
   "github_username": "kodexa-ai",
   "version": "0.1.0",
-  "org_slug": "my-org",
-  "kodexa_profile": "dev"
+  "org_slug": "my-org"
 }
