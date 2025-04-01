@@ -35,7 +35,7 @@ def infer(document: Document, project: ProjectEndpoint, pipeline_context: Pipeli
 
     # We also have a client configured
     client = KodexaClient()
-    logger.info(f"Client: {client.get_platform()}")
+    logger.info(f"Get Model Name from Client: {client.get_object_by_ref("store", "{{cookiecutter.org_slug}}/{{cookiecutter.project_slug}}").name}")
 
     # We can also get the assistant
     logger.info(f"Assistant: {assistant}")
