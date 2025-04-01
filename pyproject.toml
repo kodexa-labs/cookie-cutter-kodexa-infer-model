@@ -1,27 +1,22 @@
 [tool]
 [tool.poetry]
-name = "cookiecutter-kodexa-transformer-model"
-version = "1.1.1"
-description = "Cookiecutter template for a Kodexa Transformer Model"
-license = "BSD-3-Clause"
-authors = ["Xie Wei <ampedee@gmail.com>"]
+name = "cookiecutter-kodexa-infer-model"
+version = "1.0.0"
+description = "Cookiecutter template for a Kodexa Inference Model"
+license = "Apache-2.0"
+authors = ["Philip Dodds <philip@kodexa.com>"]
 readme = "README.md"
-repository = "https://github.com/waynerv/cookiecutter-pypackage"
-documentation = "https://waynerv.github.io/cookiecutter-pypackage/"
+repository = "https://github.com/kodexa-labs/cookiecutter-kodexa-infer-model"
 keywords = ['cookiecutter', 'template', 'package']
 
 include = [
   '{{cookiecutter.project_slug}}/**/*',
   'cookiecutter.json',
-  'hooks/*'
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
 cookiecutter = "2.6.0"
-
-pytest = {version = "^8.3.2", optional=true}
-pyyaml = {version="^6.0.2",optional=true}
 
 [tool.poetry.extras]
 dev = [
