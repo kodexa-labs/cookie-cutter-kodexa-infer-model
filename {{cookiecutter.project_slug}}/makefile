@@ -18,7 +18,7 @@ clean:
 	rm -rf coverage.xml .coverage
 
 deploy:
-    poetry run kodexa deploy model.yml --update
+	poetry run kodexa deploy model.yml --update
 
 undeploy:
 	poetry run kodexa undeploy model.yml
