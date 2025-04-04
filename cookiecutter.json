@@ -7,5 +7,16 @@
   "email": "support@kodexa.com",
   "github_username": "kodexa-ai",
   "version": "0.1.0",
-  "org_slug": "my-org"
+  "org_slug": "my-org",
+  "__prompts__": {
+    "project_name": "The name of the project for your model",
+    "project_slug": "The slug for your model",
+    "pkg_name": "The package name for your model",
+    "project_short_description": "Short description",
+    "github_username": "GitHub username or organization",
+    "full_name": "Author full name",
+    "email": "Author email",
+    "version": "The version for your model",
+    "org_slug": "The Kodexa organization slug you will host your model in"
+  }
 }
